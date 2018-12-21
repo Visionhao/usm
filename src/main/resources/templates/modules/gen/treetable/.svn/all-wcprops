@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable
+END
+viewForm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/viewForm.xml
+END
+controller.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/controller.xml
+END
+mapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/mapper.xml
+END
+dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/dao.xml
+END
+entity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/entity.xml
+END
+viewList.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/viewList.xml
+END
+service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/templates/modules/gen/treetable/service.xml
+END

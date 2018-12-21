@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/mapper
+END
+JsonMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/mapper/JsonMapper.java
+END
+JaxbMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/mapper/JaxbMapper.java
+END
+BeanMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/mapper/BeanMapper.java
+END

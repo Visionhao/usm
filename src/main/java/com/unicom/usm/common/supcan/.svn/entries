@@ -1,0 +1,81 @@
+10
+
+dir
+17
+http://192.168.20.140/svn/USM/01Trunks/00Codes/src/main/java/com/unicom/usm/common/supcan
+http://192.168.20.140/svn/USM
+
+
+
+2016-12-23T07:19:29.092446Z
+17
+wenhao_wu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+996ce8ed-e466-1c48-b003-e724c23650f5
+
+
+
+
+
+
+0
+
+SupcanController.java
+file
+
+
+
+
+2016-12-01T04:09:05.900000Z
+2e8e841d1437c2b5ab8a179e407fab16
+2016-12-23T07:19:29.092446Z
+17
+wenhao_wu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6464
+
+annotation
+dir
+
+common
+dir
+
+freeform
+dir
+
+treelist
+dir
+

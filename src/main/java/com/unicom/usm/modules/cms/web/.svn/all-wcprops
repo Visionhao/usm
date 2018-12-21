@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web
+END
+GuestbookController.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/GuestbookController.java
+END
+CommentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/CommentController.java
+END
+StatsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/StatsController.java
+END
+CategoryController.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/CategoryController.java
+END
+LinkController.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/LinkController.java
+END
+TemplateController.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/TemplateController.java
+END
+CmsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/CmsController.java
+END
+SiteController.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/SiteController.java
+END
+ArticleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/cms/web/ArticleController.java
+END

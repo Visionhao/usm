@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/cache
+END
+ehcache-local.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/cache/ehcache-local.xml
+END
+ehcache-rmi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/cache/ehcache-rmi.xml
+END

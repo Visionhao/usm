@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity
+END
+GenCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity/GenCategory.java
+END
+GenTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity/GenTable.java
+END
+GenTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity/GenTemplate.java
+END
+GenScheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity/GenScheme.java
+END
+GenTableColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity/GenTableColumn.java
+END
+GenConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/entity/GenConfig.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/Page.java
+END
+DataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/DataEntity.java
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/Parameter.java
+END
+ActEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/ActEntity.java
+END
+BaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/BaseEntity.java
+END
+CrudDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/CrudDao.java
+END
+MapperLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/MapperLoader.java
+END
+TreeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/TreeDao.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/BaseDao.java
+END
+TreeEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/TreeEntity.java
+END

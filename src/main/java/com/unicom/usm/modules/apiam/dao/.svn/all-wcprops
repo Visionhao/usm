@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/apiam/dao
+END
+TagApiManageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/apiam/dao/TagApiManageDao.java
+END
+QuestionFeedbackDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/USM/!svn/ver/31/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/apiam/dao/QuestionFeedbackDao.java
+END
+TagRelatedMappingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/USM/!svn/ver/22/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/apiam/dao/TagRelatedMappingDao.java
+END
+RecommendEffectTestDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/USM/!svn/ver/29/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/apiam/dao/RecommendEffectTestDao.java
+END
+StopWordManageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/apiam/dao/StopWordManageDao.java
+END

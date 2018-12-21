@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms
+END
+LinkDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/LinkDao.xml
+END
+SiteDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/SiteDao.xml
+END
+ArticleDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/ArticleDao.xml
+END
+GuestbookDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/GuestbookDao.xml
+END
+ArticleDataDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/ArticleDataDao.xml
+END
+CommentDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/CommentDao.xml
+END
+CategoryDao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/resources/mappings/modules/cms/CategoryDao.xml
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/security/shiro/cache
+END
+JedisCacheManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/security/shiro/cache/JedisCacheManager.java
+END
+SessionCacheManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/security/shiro/cache/SessionCacheManager.java
+END

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unicom.usm.modules.apiam.dao.TagRelatedMappingDao">
+
+    <sql id="tagRelatedMappingColumns">
+    		a.id,                   
+   			a.tag_id,             
+   			a.tag_name,             
+   			a.keyword,             
+   			a.related_word,         
+   			a.related_type,        
+   			a.create_time,          
+			cat.category as "tagClassify.category",
+			cat.id as "tagClassify.id",
+			cat.parent_id as "tagClassify.parentId",
+			cat.parent_ids as "tagClassify.parentIds"
+    </sql>
+    
+    <sql id="tagRelatedMappingJoins">
+		LEFT JOIN us_tag c ON c.id = a.tag_id
+		LEFT JOIN us_tag_category cat ON cat.id = c.category_id
+    </sql>
+	
+	<!-- 根据编号获得 -->
+	<select id="get" resultType="TagRelatedMapping">
+		SELECT
+			<include refid="tagRelatedMappingColumns"/>
+		FROM us_tag_related_mapping a
+		<include refid="tagRelatedMappingJoins"/>
+		WHERE a.id = #{id}
+	</select>
+	
+	
+	<!-- 分页所有的信息 -->
+	<select id="findList" resultType="TagRelatedMapping">
+		SELECT
+			<include refid="tagRelatedMappingColumns"/>
+		FROM us_tag_related_mapping a
+		<include refid="tagRelatedMappingJoins"/>
+		WHERE 1 =  1
+		AND cat.parent_ids like  '%0%'
+		<if test="tagClassify != null and tagClassify.id != 1 and tagClassify.id != ''">
+			AND (cat.id = #{tagClassify.id}) 
+		</if>
+		<!-- <if test="tagClassify != null and tagClassify.id != 1 and tagClassify.id != '' and tagClassify.id in(10,11,12)">
+			and cat.parent_id  in (SELECT ac.parent_id FROM us_tag_category ac WHERE ac.parent_id  = #{tagClassify.id})
+		</if> -->
+		
+		<if test="tagName != null and tagName != ''">
+			AND a.tag_name like 
+					<if test="dbName == 'oracle'">'%'||#{tagName}||'%'</if>
+					<if test="dbName == 'mssql'">'%'+#{tagName}+'%'</if>
+					<if test="dbName == 'mysql'">CONCAT('%', #{tagName}, '%')</if>
+		</if>
+		<if test="relatedWord != null and relatedWord != ''">
+			AND a.related_word like 
+					<if test="dbName == 'oracle'">'%'||#{relatedWord}||'%'</if>
+					<if test="dbName == 'mssql'">'%'+#{relatedWord}+'%'</if>
+					<if test="dbName == 'mysql'">CONCAT('%', #{relatedWord}, '%')</if>
+		</if>
+		<!-- 数据范围过滤 -->
+		${sqlMap.dsf}
+		<choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+				ORDER BY a.id
+			</otherwise>
+		</choose>
+	</select>
+	
+	<!-- 搜索相关词内容 -->
+	<select id="findListData" resultType="TagRelatedMapping">
+		SELECT
+			<include refid="tagRelatedMappingColumns"/>
+		FROM us_tag_related_mapping a
+		<include refid="tagRelatedMappingJoins"/>
+		WHERE 1 =  1
+		<if test="relatedWord != null and relatedWord != ''">
+			AND a.related_word like 
+					<if test="dbName == 'oracle'">'%'||#{relatedWord}||'%'</if>
+					<if test="dbName == 'mssql'">'%'+#{relatedWord}+'%'</if>
+					<if test="dbName == 'mysql'">CONCAT('%', #{relatedWord}, '%')</if>
+		</if>
+		<!-- 数据范围过滤 -->
+		${sqlMap.dsf}
+		<choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+				ORDER BY a.related_word 
+			</otherwise>
+		</choose>
+	</select>
+	
+	<!-- 查询全部 -->
+	<select id="findAllList" resultType="TagRelatedMapping">
+		SELECT
+			<include refid="tagRelatedMappingColumns"/>
+		FROM us_tag_related_mapping a
+		<include refid="tagRelatedMappingJoins"/>
+		WHERE 1 = 1 
+		ORDER BY a.id
+	</select>
+	
+	<!-- 查询全部数目 -->
+	<select id="findAllCount" resultType="long">
+		SELECT
+			COUNT(1)
+		FROM us_tag_related_mapping a
+		WHERE 1  =  1
+	</select>
+	
+	<!-- 插入-->
+	<insert id="insert">
+		INSERT INTO us_tag_related_mapping (
+			 id,                   
+   			 tag_id,               
+   			 tag_name,             
+   			 keyword,             
+   			 related_word,         
+   			 related_type,         
+   			 create_time          
+		) VALUES (
+			#{id}, 
+			#{tagId}, 
+			#{tagName}, 
+			#{keyword}, 
+			#{relatedWord}, 
+			#{relatedType}, 
+			#{createTime}
+		)
+	</insert>
+	
+	<!-- 更新 -->
+	<update id="update">
+		UPDATE us_tag_related_mapping SET 
+			tag_id = #{tagId}, 
+			tag_name = #{tagName}, 
+			keyword = #{keyword}, 
+			related_word = #{relatedWord}, 
+			related_type = #{relatedType}, 
+			create_time = #{createTime}
+		WHERE id = #{id}
+	</update>
+	
+	<!-- 逻辑删除用户 -->
+	<update id="delete">
+		delete from us_tag_related_mapping where id = #{id}
+	</update>
+	
+</mapper>

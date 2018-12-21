@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/service
+END
+ServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/service/ServiceException.java
+END
+CrudService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/service/CrudService.java
+END
+TreeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/service/TreeService.java
+END
+BaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/service/BaseService.java
+END

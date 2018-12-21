@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unicom.usm.modules.utsm.dao.TagManageDao">
+
+    <sql id="tagManageColumns">
+    		a.id,
+    	    a.tag,               
+	   		a.comment,              
+	   		a.category_id,          
+	   		a.verify_status,        
+	   		a.tag_status,           
+	   		a.synchro_test_result,  
+	   		a.search_test_result, 
+	   		a.connect_type,         
+	   		a.connect_ip,           
+	   		a.connect_port,        
+	   		a.connect_user,         
+	   		a.connect_password,     
+	   		a.connect_file_path,    
+	   		a.day_tag_name_rule,    
+	   		a.month_tag_name_rule,  
+	   		a.synchro_frequency,    
+	   		a.synchro_date,         
+	   		a.update_type,          
+	   		a.ods_table_name,       
+	   		a.tag_show_name,        
+		    a.tag_column_name,      
+		    a.tag_column_datatype,  
+		    a.tag_column_length,    
+		    a.synchro_type,         
+		    a.create_time,          
+			ca.category as "tagClassify.category",
+			ca.id as "tagClassify.id"
+		
+    	<!-- a.id,
+    	a.company_id AS "company.id",
+    	a.office_id AS "office.id",
+    	a.login_name,
+    	a.password,
+    	a.no,
+		a.name,
+		a.email,
+		a.phone,
+		a.mobile,
+		a.user_type,
+		a.login_ip,
+		a.login_date,
+		a.remarks,
+		a.login_flag,
+		a.photo,
+		a.create_by AS "createBy.id",
+		a.create_date,
+		a.update_by AS "updateBy.id",
+		a.update_date,
+		a.del_flag,
+    	c.name AS "company.name",
+    	c.parent_id AS "company.parent.id",
+    	c.parent_ids AS "company.parentIds",
+    	ca.id AS "company.area.id",
+    	ca.name AS "company.area.name",
+    	ca.parent_id AS "company.area.parent.id",
+    	ca.parent_ids AS "company.area.parentIds",
+    	o.name AS "office.name",
+    	o.parent_id AS "office.parent.id",
+    	o.parent_ids AS "office.parentIds",
+    	oa.id AS "office.area.id",
+    	oa.name AS "office.area.name",
+    	oa.parent_id AS "office.area.parent.id",
+    	oa.parent_ids AS "office.area.parentIds",
+    	cu.id AS "company.primaryPerson.id",
+    	cu.name AS "company.primaryPerson.name",
+    	cu2.id AS "company.deputyPerson.id",
+    	cu2.name AS "company.deputyPerson.name",
+    	ou.id AS "office.primaryPerson.id",
+    	ou.name AS "office.primaryPerson.name",
+    	ou2.id AS "office.deputyPerson.id",
+    	ou2.name AS "office.deputyPerson.name" -->
+      
+    </sql>
+    
+    <sql id="tagManageJoins">
+		LEFT JOIN us_tag c ON c.id = a.category_id
+		LEFT JOIN us_tag_category ca ON ca.id = a.category_id
+    </sql>
+	
+	<!-- 根据编号获得 -->
+	<select id="get" resultType="TagManage">
+		SELECT
+			<include refid="tagManageColumns"/>
+		FROM us_tag a
+		<include refid="tagManageJoins"/><!-- 
+		LEFT JOIN sys_role_office ro ON ro.role_id = r.id -->
+		WHERE a.id = #{id}
+	</select>
+	
+	
+	<!-- 分页查询用户信息 -->
+	<select id="findList" resultType="TagManage">
+		SELECT
+			<include refid="tagManageColumns"/>
+		FROM us_tag a
+		<include refid="tagManageJoins"/>
+		WHERE 1 =  1
+		<if test="tagClassify != null and tagClassify.id != null and tagClassify.id != ''">
+			AND (ca.id = #{tagClassify.id} OR ca.parent_ids LIKE 
+					<if test="dbName == 'oracle'">'%,'||#{tagClassify.id}||',%')</if>
+					<if test="dbName == 'mssql'">'%,'+#{tagClassify.id}+',%')</if>
+					<if test="dbName == 'mysql'">CONCAT('%,', #{tagClassify.id}, ',%'))</if>
+		</if>
+		<if test="tag != null and tag != ''">
+			AND a.tag like 
+					<if test="dbName == 'oracle'">'%'||#{tag}||'%'</if>
+					<if test="dbName == 'mssql'">'%'+#{tag}+'%'</if>
+					<if test="dbName == 'mysql'">CONCAT('%', #{tag}, '%')</if>
+		</if>
+		<!-- 数据范围过滤 -->
+		${sqlMap.dsf}
+		<choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+				ORDER BY a.id
+			</otherwise>
+		</choose>
+	</select>
+	
+	<!-- 根据tagManageId获取（树查询用户时用） -->
+	<select id="findUserByTagManageId" resultType="TagManage" useCache="true">
+		SELECT
+			<include refid="tagManageColumns"/>
+		FROM us_tag a LEFT JOIN us_tag_category c on 
+		a.category_id = c.id
+		AND a.category_id = #{tagClassify.id}
+		ORDER BY a.id
+	</select>
+	
+	<!-- 查询全部 -->
+	<select id="findAllList" resultType="TagManage">
+		SELECT
+			<include refid="tagManageColumns"/>
+		FROM us_tag a
+		<include refid="tagManageJoins"/>
+		WHERE 1 = 1 
+		ORDER BY a.id
+	</select>
+	
+	<!-- 查询全部数目 -->
+	<select id="findAllCount" resultType="long">
+		SELECT
+			COUNT(1)
+		FROM us_tag a
+		WHERE 1  =  1
+	</select>
+	
+	<!-- 插入-->
+	<insert id="insert">
+		INSERT INTO us_tag (
+			id,
+    	    tag,               
+	   		comment,              
+	   		category_id,          
+	   		tag_status,           
+	   		connect_type,         
+	   		connect_ip,           
+	   		connect_port,        
+	   		connect_user,         
+	   		connect_password,     
+	   		connect_file_path,    
+	   		day_tag_name_rule,    
+	   		month_tag_name_rule,  
+	   		synchro_frequency,    
+	   		synchro_date,         
+	   		update_type,          
+	   		tag_show_name,        
+		    tag_column_name,      
+		    tag_column_datatype,  
+		    tag_column_length,    
+		    synchro_type,         
+		    create_time   
+		) VALUES (
+			#{id}, 
+			#{tag}, 
+			#{comment}, 
+			#{tagClassify.id}, 
+			#{tagStatus}, 
+			#{connectType}, 
+			#{connectIp}, 
+			#{connectPort}, 
+			#{connectUser}, 
+			#{connectPassword}, 
+			#{connectFilePath}, 
+			#{dayTagNameRule}, 
+			#{monthTagNameRule},
+			#{synchroFrequency},
+			#{synchroDate},
+			#{updateType}, 
+			#{tagShowName}, 
+			#{tagColumnName},
+			#{tagColumnDatatype},
+			#{tagColumnLength},
+			#{synchroType},
+			#{createTime}
+		)
+	</insert>
+	
+	<!-- 更新 -->
+	<update id="update">
+		UPDATE us_tag SET 
+			tag = #{tag}, 
+			comment = #{comment}, 
+			category_id = #{tagClassify.id}, 
+			tag_status = #{tagStatus}, 
+			connect_type = #{connectType}, 
+			connect_ip = #{connectIp}, 
+			connect_port = #{connectPort}, 
+			connect_user = #{connectUser}, 
+			connect_password = #{connectPassword}, 
+			connect_file_path = #{connectFilePath}, 
+			day_tag_name_rule = #{dayTagNameRule}, 
+			synchro_frequency = #{synchroFrequency}, 
+			update_type = #{updateType}, 
+			tag_show_name = #{tagShowName}, 
+			tag_column_name = #{tagColumnName},
+			tag_column_datatype = #{tagColumnDatatype},
+			tag_column_length = #{tagColumnLength},
+			synchro_type = #{synchroType},
+			create_time = #{createTime}
+		WHERE id = #{id}
+	</update>
+	
+	<!-- 逻辑删除用户 -->
+	<update id="delete">
+		<!-- UPDATE sys_user SET 
+			del_flag = #{DEL_FLAG_DELETE}
+		WHERE id = #{id} -->
+		delete from us_tag where id = #{id}
+	</update>
+	
+	<!-- 启用 -->
+	<update id="start">
+		UPDATE us_tag  SET 
+			tag_status = '00'
+		WHERE id = #{id}
+	</update>
+	
+	<!-- 暂停 -->
+	<update id="pause">
+		UPDATE us_tag SET 
+			tag_status = '01'
+		WHERE id = #{id}
+	</update>
+	
+</mapper>

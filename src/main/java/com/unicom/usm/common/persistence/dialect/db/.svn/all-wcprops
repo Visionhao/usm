@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db
+END
+HSQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/HSQLDialect.java
+END
+SybaseDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/SybaseDialect.java
+END
+DerbyDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/DerbyDialect.java
+END
+H2Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/H2Dialect.java
+END
+OracleDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/OracleDialect.java
+END
+SQLServerDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/SQLServerDialect.java
+END
+MySQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/MySQLDialect.java
+END
+DB2Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/DB2Dialect.java
+END
+PostgreSQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/PostgreSQLDialect.java
+END
+SQLServer2005Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/common/persistence/dialect/db/SQLServer2005Dialect.java
+END

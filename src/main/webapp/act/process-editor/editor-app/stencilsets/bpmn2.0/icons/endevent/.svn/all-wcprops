@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/webapp/act/process-editor/editor-app/stencilsets/bpmn2.0/icons/endevent
+END
+error.png
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/webapp/act/process-editor/editor-app/stencilsets/bpmn2.0/icons/endevent/error.png
+END
+none.png
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/webapp/act/process-editor/editor-app/stencilsets/bpmn2.0/icons/endevent/none.png
+END
+cancel.png
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/webapp/act/process-editor/editor-app/stencilsets/bpmn2.0/icons/endevent/cancel.png
+END
+terminate.png
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/webapp/act/process-editor/editor-app/stencilsets/bpmn2.0/icons/endevent/terminate.png
+END

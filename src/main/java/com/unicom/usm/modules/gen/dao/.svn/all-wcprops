@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/dao
+END
+GenTableColumnDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/dao/GenTableColumnDao.java
+END
+GenSchemeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/dao/GenSchemeDao.java
+END
+GenTemplateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/dao/GenTemplateDao.java
+END
+GenTableDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/dao/GenTableDao.java
+END
+GenDataBaseDictDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/USM/!svn/ver/17/01Trunks/00Codes/src/main/java/com/unicom/usm/modules/gen/dao/GenDataBaseDictDao.java
+END

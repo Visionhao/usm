@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin
+END
+clean.bat
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/clean.bat
+END
+versions.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/versions.bat
+END
+run-jetty.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/run-jetty.bat
+END
+run-tomcat6.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/run-tomcat6.bat
+END
+cleanide.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/cleanide.bat
+END
+run-tomcat7.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/run-tomcat7.bat
+END
+package.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/package.bat
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/deploy.bat
+END
+eclipse.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/USM/!svn/ver/14/01Trunks/00Codes/bin/eclipse.bat
+END

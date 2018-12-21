@@ -1,0 +1,149 @@
+10
+
+dir
+17
+http://192.168.20.140/svn/USM/01Trunks/00Codes/src/main/webapp/static/ckeditor/plugins
+http://192.168.20.140/svn/USM
+
+
+
+2016-12-23T07:19:29.092446Z
+17
+wenhao_wu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+996ce8ed-e466-1c48-b003-e724c23650f5
+
+
+
+
+
+
+0
+
+a11yhelp
+dir
+
+about
+dir
+
+adobeair
+dir
+
+ajax
+dir
+
+autogrow
+dir
+
+bbcode
+dir
+
+clipboard
+dir
+
+colordialog
+dir
+
+devtools
+dir
+
+dialog
+dir
+
+div
+dir
+
+docprops
+dir
+
+find
+dir
+
+flash
+dir
+
+forms
+dir
+
+iframe
+dir
+
+iframedialog
+dir
+
+image
+dir
+
+link
+dir
+
+liststyle
+dir
+
+pagebreak
+dir
+
+pastefromword
+dir
+
+pastetext
+dir
+
+placeholder
+dir
+
+preview
+dir
+
+scayt
+dir
+
+showblocks
+dir
+
+smiley
+dir
+
+specialchar
+dir
+
+styles
+dir
+
+stylesheetparser
+dir
+
+table
+dir
+
+tableresize
+dir
+
+tabletools
+dir
+
+templates
+dir
+
+uicolor
+dir
+
+wsc
+dir
+
+xml
+dir
+

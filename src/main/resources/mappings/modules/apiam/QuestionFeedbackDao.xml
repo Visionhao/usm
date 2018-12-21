@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unicom.usm.modules.apiam.dao.QuestionFeedbackDao">
+
+    <sql id="questionFeedbackColumns">
+    	    a.id,
+			a.content,
+			a.name,
+			a.email,
+			a.phone,
+			a.workunit,
+			a.ip,
+			a.create_date,
+			a.re_user_id AS "reUser.id",
+			a.re_date,
+			a.re_content,
+			u.name AS "reUser.name"
+       
+    </sql>
+    
+    <sql id="questionFeedbackJoins">
+		LEFT JOIN sys_user u ON u.id = a.re_user_id
+	</sql>
+    
+	<!-- 根据编号获得 -->
+	<select id="get" resultType="QuestionFeedback">
+		SELECT
+			<include refid="questionFeedbackColumns"/>
+		FROM us_question_feedback a
+			<include refid="questionFeedbackJoins"/>
+		WHERE a.id = #{id}
+	</select>
+	
+	
+	<!-- 分页查询用户信息 -->
+	<select id="findList" resultType="QuestionFeedback">
+		SELECT
+			<include refid="questionFeedbackColumns"/>
+		FROM us_question_feedback a
+			<include refid="questionFeedbackJoins"/>
+		WHERE 1 =  1
+		<!-- 数据范围过滤 -->
+		${sqlMap.dsf}
+		<choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+				ORDER BY a.id
+			</otherwise>
+		</choose>
+	</select>
+	
+	<!-- 查询全部 -->
+	<select id="findAllList" resultType="QuestionFeedback">
+		SELECT
+			<include refid="questionFeedbackColumns"/>
+		FROM us_question_feedback a
+			<include refid="questionFeedbackJoins"/>
+		WHERE 1 = 1 
+		ORDER BY a.id
+	</select>
+	
+	<!-- 查询全部数目 -->
+	<select id="findAllCount" resultType="long">
+		SELECT
+			COUNT(1)
+		FROM us_question_feedback a
+		WHERE 1  =  1
+	</select>
+	
+	<!-- 插入-->
+	<insert id="insert">
+		INSERT INTO us_question_feedback (
+		    id,
+			content,
+			name,
+			email,
+			phone,
+			workunit,
+			ip,
+			create_date,
+			re_user_id,
+			re_date,
+			re_content   
+		) VALUES (
+			#{id}, 
+			#{content}, 
+			#{name}, 
+			#{email}, 
+			#{phone}, 
+			#{workunit}, 
+			#{ip}, 
+			#{createDate}, 
+			#{reUser.id},
+			#{reDate}, 
+			#{reContent}
+		)
+	</insert>
+	
+	<!-- 更新 -->
+	<update id="update">
+		UPDATE us_question_feedback SET 
+			content = #{content},
+			name = #{name},
+			email = #{email},
+			phone = #{phone},
+			workunit = #{workunit},
+			ip = #{ip},
+			create_date = #{createDate},
+			re_user_id = #{reUser.id},
+			re_date = #{reDate},
+			re_content = #{reContent}
+		WHERE id = #{id}
+	</update>
+	
+	<!-- 逻辑删除用户 -->
+	<update id="delete">
+		<!-- UPDATE sys_user SET 
+			del_flag = #{DEL_FLAG_DELETE}
+		WHERE id = #{id} -->
+		delete from us_question_feedback where id = #{id}
+	</update>
+</mapper>
